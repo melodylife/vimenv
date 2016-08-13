@@ -53,7 +53,7 @@ set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 call pathogen#infect()
 
 "Taglist
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+let Tlist_Ctags_Cmd='/usr/bin/ctags'
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Use_Right_Window=1
 let Tlist_Auto_Open=1
@@ -78,7 +78,7 @@ autocmd VimEnter * wincmd p
 " syntax highlighting
  set background=dark     " you can use `dark` or `light` as your background
  syntax on
- colors mango
+ "colors mango
 
  "automatically close NerdTree when no buffer activated
  "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeType == "primary") | q | endif
